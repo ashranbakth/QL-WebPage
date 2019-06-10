@@ -9,37 +9,29 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class UserFormComponent implements OnInit {
 
   rForm: FormGroup;
-  post: any;
-  description: string = '';
-  name: string = '';
 
   constructor(private fb: FormBuilder) { 
-    // this.rForm = fb.group({
-    //   'name': [null, Validators.required],
-    //   'description': [null, Validators.
-    //     compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
-    //   'validate' : ''
-    // })
-  }
-
-  addPost(post){
-    this.description = post.description; 
-    this.name = post.name;
   }
 
   ngOnInit() {
-    // this.rForm = this.fb.group({
-    //   firstname: 'default first name',
-    //   lastname: 'default last name',
-    //   creditscore: 'default credit',
-    //   annualincome: 'default anual',
-    // })
-
     this.rForm = this.fb.group({
-      firstname: ['default first name', [Validators.required, Validators.maxLength(300)]],
-      lastname: 'default last name',
-      creditscore: 'default credit',
-      annualincome: 'default anual',
+      firstname: [null, [
+        Validators.required, 
+        Validators.maxLength(30),
+      ]],
+      lastname: [null, [
+        Validators.required, 
+        Validators.maxLength(30),
+      ]],
+      creditscore: [null,[
+        Validators.required,
+        Validators.min(1),
+        Validators.max(850),
+      ]],
+      annualincome: [null,[
+        Validators.required,
+        Validators.min(10),
+      ]],
     })
 
     // this.rForm.valueChanges.subscribe(data => console.log(data));

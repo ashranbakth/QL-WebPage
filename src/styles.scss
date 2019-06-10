@@ -42,5 +42,14 @@ h1 {
     border-bottom-right-radius: 25%;
     padding: 10px;
 }
+
+input[type=text] {
+    width: 500px;
+    height: 25px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    text-indent: 10px;
+ }
 // html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
