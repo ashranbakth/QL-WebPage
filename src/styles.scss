@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Nunito', sans-serif; 
+}
+
+
+h1 {
+    font-size: 300%;
+}
+
+.grey-container {
+    border-radius: 25px;
+    margin: auto;
+    width: 95%;
+    background: #eee;
+    padding: 10px;
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 95%;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.left-half{
+    // background-color: #ff9e2c;
+    flex: 1;
+    padding: 1rem;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+}
+
+.right-half{
+    // background-color: #b6701e;
+    flex: 1;
+    padding: 1rem;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 10px;
+}
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

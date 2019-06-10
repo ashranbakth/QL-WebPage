@@ -1,0 +1,58 @@
+<!-- <form> -->
+  <!-- <div>First name:</div>
+  <input type="text" name="firstname" placeholder="First Name">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" placeholder="Last Name">
+  <br><br> -->
+  <!-- <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input id="firstName" type="text" class="form-control">
+  </div> -->
+  
+<!-- </form> -->
+<!-- <div *ngIf="!name; else forminfo">
+  <form [formGroup]="rForm" (ngSubmit)="addPost*(rForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+        <label>First Name<br>
+          <input type="text" formControlName="name">
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <div class="row columns">
+      <h1>{{name}}</h1>
+      <p>{{description}}</p>
+    </div>
+  </div>
+</ng-template> -->
+
+<form [formGroup]="rForm">
+
+  <mat-form-field>
+    <input matInput placeholder="First Name" formControlName="firstname">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Last Name" formControlName="lastname">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Credit Score" formControlName="creditscore">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Annual Income" formControlName="annualincome">
+  </mat-form-field>
+  <br>
+
+</form>
+
