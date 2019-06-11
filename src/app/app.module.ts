@@ -14,12 +14,16 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { CardComponent } from './card/card.component';
+import { GroupCardsComponent } from './group-cards/group-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    UserFormComponent
+    UserFormComponent,
+    CardComponent,
+    GroupCardsComponent
   ],
   imports: [
     BrowserModule,
