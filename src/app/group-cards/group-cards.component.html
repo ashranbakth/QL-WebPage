@@ -1,12 +1,13 @@
 <section class="wrapper">
-  <!-- <ng-template *ngFor="let rate of interestRates">
+  <!-- <ng-template *ngFor="let rate of interestRates"> -->
     <app-card
+      *ngFor="let rate of interestRates"
       [name]="rate.name"
       [year]="rate.year"
       [interest]="rate.interest">
     </app-card>
-  </ng-template> -->
-  <app-card
+  <!-- </ng-template> -->
+  <!-- <app-card
     name="Ashran"
     [year]=2016
     [interest]=4.75>
@@ -15,5 +16,5 @@
     name="Ashran"
     [year]="2016"
     [interest]="4.75">
-  </app-card>
+  </app-card> -->
 </section>

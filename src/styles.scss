@@ -9,6 +9,7 @@ h1 {
 }
 
 .grey-container {
+    margin: 32px;
     border-radius: 25px;
     margin: auto;
     width: 95%;
@@ -55,13 +56,18 @@ input[type=text] {
  input[type=submit] {
     background: #42aaf4;
     border-radius: 25px;
-    width: 100px;
+    width: px;
  }
 
  .wrapper {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: max-content 200px;
   }
+
+//  * {
+//     margin: 0;
+//     padding: 0;
+//  }
   
 
 
